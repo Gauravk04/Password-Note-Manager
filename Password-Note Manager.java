@@ -253,13 +253,13 @@ class CryptoUtil
      * @throws javax.crypto.IllegalBlockSizeException
      * @throws javax.crypto.BadPaddingException
      */
+
     public String decrypt(String secretKey, String encryptedText)
             throws NoSuchAlgorithmException,
             InvalidKeySpecException,
             NoSuchPaddingException,
             InvalidKeyException,
             InvalidAlgorithmParameterException,
-            UnsupportedEncodingException,
             IllegalBlockSizeException,
             BadPaddingException,
             IOException {
@@ -319,7 +319,7 @@ class PasswordManager implements ActionListener {
     Container conn1,conn2;
     JLabel lAcc,lPass;
     JTextArea encryptPasswdArea, genePassArea, searchPassArea;
-    JButton PassGeneBtn,PassEncryptBtn, PassStoreBtn, PassSearchBtn, AccAddBtn, PassDeleteBtn;
+    JButton PassGeneBtn, PassStoreBtn, PassSearchBtn, AccAddBtn, PassDeleteBtn;
     JTextField tAcc,tPass;
     JButton addNoteBtn;
     JLabel addNoteLabel;
@@ -350,13 +350,13 @@ class PasswordManager implements ActionListener {
 
     // buttons settings
     public void GUIButtonsSetting(JButton btn){
-        btn.setBackground(new Color(0x0035FF));
+        btn.setBackground(new Color(0x0014FF));
         btn.setForeground(Color.white);
         btn.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
         btn.setFocusable(false);
         Cursor crs = new Cursor(Cursor.HAND_CURSOR);
         btn.setCursor(crs);
-        Font fn = new Font("Times New Roman", Font.BOLD, 15);
+        Font fn = new Font("Amasis MT Pro Medium", Font.BOLD, 15);
         btn.setFont(fn);
     }
 
